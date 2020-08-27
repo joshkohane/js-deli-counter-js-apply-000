@@ -1,6 +1,14 @@
-function takeANumber(lineOfPeople, newName) {
-  lineOfPeople.push(newName)
-  return `Welcome, ${newName}. You are number ${lineOfPeople.length} in line.`
+// function takeANumber(lineOfPeople, newName) {
+//   lineOfPeople.push(newName)
+//   return `Welcome, ${newName}. You are number ${lineOfPeople.length} in line.`
+// }
+
+let count = 0
+
+function takeANumber(lineOfPeople) {
+  count += 1
+  lineOfPeople.push(count)
+  return `Welcome, you are number ${count}`
 }
 
 function nowServing(lineOfPeople) {
